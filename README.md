@@ -91,19 +91,3 @@ cd e2e
 npm install
 npx playwright test
 ```
-
----
-
-## 📑 Assessment Deliverables Index
-
-All 6 assessment deliverables are organized and documented:
-
-1. **Source Code & Working App**: `backend/` and `frontend/` (Instructions above).
-2. **Test Suite & Deliberate Red Run**: [docs/deliberate-red-test.md](docs/deliberate-red-test.md) (Log evidence of intentional bug injection and test failure detection).
-3. **AI Change-Loop Evidence Log**: [docs/ai-change-log.md](docs/ai-change-log.md) (Step-by-step prompt loop, failures, self-corrections, and attempt logs).
-4. **Core Technical Documentation**:
-   - [Architecture Document](docs/architecture.md) — System components, data flow diagram, and technology rationale.
-   - [Design Document](docs/design.md) — Data models, scoring formulas, API endpoints, and error handling.
-   - [User Guide](docs/user-guide.md) — Step-by-step non-technical walkthrough.
-5. **Presentation Deck**: [docs/presentation_deck.html](docs/presentation_deck.html) (Interactive browser presentation deck with speaker notes).
-6. **Video Recording Demo Script**: [docs/video_script.md](docs/video_script.md) (Structured 5-minute recording guide: 2 min problem/architecture + 3 min live demo walkthrough).
