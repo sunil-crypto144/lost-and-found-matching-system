@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost & Found Matching System - Presentation Deck</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #030712; color: #f9fafb; }
+    .slide { display: none; }
+    .slide.active { display: flex; }
+    .glass-card { background: rgba(17, 24, 39, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.08); }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between p-6 sm:p-12 selection:bg-blue-500 selection:text-white">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center border-b border-gray-800 pb-4">
+    <div class="flex items-center space-x-3">
+      <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center font-black text-white text-sm">LF</div>
+      <span class="font-bold text-sm text-gray-200">Lost & Found System</span>
+      <span class="text-xs bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded border border-blue-500/30 font-semibold">Tactive Assessment</span>
+    </div>
+    <div class="text-xs text-gray-400 font-mono">
+      Slide <span id="currentSlide">1</span> of <span id="totalSlides">6</span>
+    </div>
+  </header>
+
+  <!-- Slide Container -->
+  <main class="flex-grow flex items-center justify-center my-8">
+
+    <!-- Slide 1: Title & Overview -->
+    <div class="slide active flex-col items-center text-center space-y-6 max-w-4xl animate-fadeIn">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold">
+        <span>✦ INTERNSHIP HIRING ASSESSMENT</span>
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
+        Explainable Multi-Factor <br />
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">Lost & Found Matching System</span>
+      </h1>
+      <p class="text-base sm:text-lg text-gray-400 max-w-2xl">
+        A full-stack production application featuring frictionless public reporting, deterministic multi-attribute similarity matching, admin lifecycle control, and automated QA test suites.
+      </p>
+      <div class="flex items-center space-x-4 text-xs font-semibold text-gray-400 pt-2">
+        <span>Candidate: <strong class="text-white">Sunil Reddy</strong></span>
+        <span>•</span>
+        <span>Stack: <strong class="text-white">FastAPI + React 18 + TypeScript + Tailwind + SQLite</strong></span>
+      </div>
+    </div>
+
+    <!-- Slide 2: Problem & Core Innovation -->
+    <div class="slide flex-col space-y-8 max-w-4xl">
+      <div class="space-y-2 text-center">
+        <h2 class="text-3xl font-extrabold text-white">The Problem & Core Innovation</h2>
+        <p class="text-sm text-gray-400">Overcoming registration friction and black-box search limitations</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass-card p-6 rounded-2xl border-l-4 border-red-500 space-y-3">
+          <h3 class="font-bold text-red-400 text-lg">Traditional Challenges</h3>
+          <ul class="text-xs text-gray-300 space-y-2 list-disc list-inside">
+            <li>Mandatory signups prevent quick reporting by stressed users.</li>
+            <li>Keyword searches miss typos, abbreviations, and synonyms.</li>
+            <li>Black-box AI models fail to explain <em>why</em> two items matched.</li>
+            <li>Lack of item retrieval tracking and verified handover lifecycle.</li>
+          </ul>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl border-l-4 border-emerald-500 space-y-3">
+          <h3 class="font-bold text-emerald-400 text-lg">Our Solution Architecture</h3>
+          <ul class="text-xs text-gray-300 space-y-2 list-disc list-inside">
+            <li><strong>Frictionless Reporting:</strong> 30-sec form without mandatory account creation.</li>
+            <li><strong>Explainable Scoring:</strong> Deterministic weights across 7 structured attributes.</li>
+            <li><strong>Instant Match & Explain Modal:</strong> Real-time score breakdown.</li>
+            <li><strong>Retrieval Archive:</strong> Admin-controlled "Collected & Retrieved" state.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: 7-Factor Matching Engine -->
+    <div class="slide flex-col space-y-6 max-w-4xl">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl font-extrabold text-white">7-Factor Explainable Scoring Matrix</h2>
+        <p class="text-sm text-gray-400">Mathematical weighting rather than arbitrary keyword queries</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
+        <div class="glass-card p-4 rounded-xl text-center space-y-1">
+          <span className="text-blue-400 font-bold text-lg">20%</span>
+          <div className="font-bold text-white">Location</div>
+          <p className="text-gray-400 text-[10px]">Haversine & string spatial closeness</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center space-y-1">
+          <span className="text-purple-400 font-bold text-lg">15%</span>
+          <div className="font-bold text-white">Category</div>
+          <p className="text-gray-400 text-[10px]">Taxonomy group mapping</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center space-y-1">
+          <span className="text-emerald-400 font-bold text-lg">15%</span>
+          <div className="font-bold text-white">Brand & Model</div>
+          <p className="text-gray-400 text-[10px]">Manufacturer token entity NLP</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center space-y-1">
+          <span className="text-amber-400 font-bold text-lg">15%</span>
+          <div className="font-bold text-white">Title Match</div>
+          <p className="text-gray-400 text-[10px]">Token set & fuzzy ratio</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center space-y-1">
+          <span className="text-rose-400 font-bold text-lg">15%</span>
+          <div className="font-bold text-white">Date / Time</div>
+          <p className="text-gray-400 text-[10px]">Exponential time-decay curve</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center space-y-1">
+          <span className="text-indigo-400 font-bold text-lg">10%</span>
+          <div className="font-bold text-white">Color</div>
+          <p className="text-gray-400 text-[10px]">Attribute color similarity</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center space-y-1">
+          <span className="text-cyan-400 font-bold text-lg">10%</span>
+          <div className="font-bold text-white">Description</div>
+          <p className="text-gray-400 text-[10px]">TF-IDF semantics & tokens</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center space-y-1 border border-cyan-500/30">
+          <span className="text-cyan-400 font-bold text-lg">Bonus</span>
+          <div className="font-bold text-white">Image Hash</div>
+          <p className="text-gray-400 text-[10px]">64-bit visual structural aHash</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4: AI Change Loop Execution -->
+    <div class="slide flex-col space-y-6 max-w-4xl">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl font-extrabold text-white">Stage 3: AI Change Loop Execution</h2>
+        <p class="text-sm text-gray-400">Evidence of directing AI through build ➔ test ➔ fail ➔ fix cycles</p>
+      </div>
+
+      <div class="space-y-4 text-xs">
+        <div class="glass-card p-4 rounded-2xl space-y-2 border-l-4 border-blue-500">
+          <div class="flex justify-between font-bold text-white">
+            <span>Cycle 1: Public Reporting Transition</span>
+            <span class="text-emerald-400 font-mono">RESOLVED (1 Attempt)</span>
+          </div>
+          <p class="text-gray-300">Migrated schema to support optional user IDs and contact fields. Detected and resolved SQLite path desynchronization via absolute path configuration.</p>
+        </div>
+
+        <div class="glass-card p-4 rounded-2xl space-y-2 border-l-4 border-purple-500">
+          <div class="flex justify-between font-bold text-white">
+            <span>Cycle 2: Collection & Retrieved Archive</span>
+            <span class="text-emerald-400 font-mono">RESOLVED (1 Attempt)</span>
+          </div>
+          <p class="text-gray-300">Implemented item resolution endpoint. Detected and corrected FastAPI route collision where parameter routes shadowed static /resolved endpoint.</p>
+        </div>
+
+        <div class="glass-card p-4 rounded-2xl space-y-2 border-l-4 border-emerald-500">
+          <div class="flex justify-between font-bold text-white">
+            <span>Cycle 3: Privacy Protection & Public Live Stats</span>
+            <span class="text-emerald-400 font-mono">RESOLVED (1 Attempt)</span>
+          </div>
+          <p class="text-gray-300">Isolated contact information to Admin authorization while publishing real-time live retrieval counters to public visitors.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5: QA Test Automation & Red Run -->
+    <div class="slide flex-col space-y-6 max-w-4xl">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl font-extrabold text-white">Quality Assurance & Deliberate Red Run</h2>
+        <p class="text-sm text-gray-400">16 automated tests covering normal paths, edge cases, and invalid inputs</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        <div class="glass-card p-5 rounded-2xl space-y-3">
+          <h4 class="font-bold text-white text-sm">Automated Test Suites</h4>
+          <ul class="space-y-1.5 text-gray-300">
+            <li>✓ Auth registration, duplicate checks & bcrypt verification</li>
+            <li>✓ Public lost/found reporting without tokens</li>
+            <li>✓ Invalid file type rejection (text files / size limits)</li>
+            <li>✓ Multi-factor scoring mathematical accuracy</li>
+            <li>✓ 100% test pass rate in under 5 seconds</li>
+          </ul>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl space-y-3 border border-red-500/30">
+          <h4 class="font-bold text-red-400 text-sm">Deliberate Red Run Proof</h4>
+          <p class="text-gray-300">
+            Intentionally injected a breaking threshold bug in <code>matching.py</code>. Executed <code>pytest</code>, captured the RED failure output across test suites, and verified auto-recovery back to GREEN.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 6: Summary & Conclusion -->
+    <div class="slide flex-col items-center text-center space-y-6 max-w-3xl">
+      <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-600 to-emerald-500 flex items-center justify-center font-black text-2xl text-white shadow-xl shadow-blue-500/20">
+        ✓
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Engineering Assessment Complete</h2>
+      <p class="text-sm text-gray-300 leading-relaxed max-w-xl">
+        All 4 stages and 6 deliverables have been built, rigorously tested, fully documented, and verified.
+      </p>
+
+      <div class="grid grid-cols-3 gap-4 text-xs font-semibold text-gray-300 w-full pt-2">
+        <div class="p-3 glass-card rounded-xl">16 / 16 Tests Passed</div>
+        <div class="p-3 glass-card rounded-xl">3 AI Loops Closed</div>
+        <div class="p-3 glass-card rounded-xl">6 Docs Delivered</div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer / Controls -->
+  <footer class="flex justify-between items-center border-t border-gray-800 pt-4 text-xs">
+    <div class="text-gray-500">Use arrow keys or buttons to navigate</div>
+    <div class="flex space-x-3">
+      <button id="prevBtn" class="px-4 py-2 rounded-xl bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-colors">Previous</button>
+      <button id="nextBtn" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-colors">Next</button>
+    </div>
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function updateSlides(index) {
+      slides.forEach((s, i) => s.classList.toggle('active', i === index));
+      document.getElementById('currentSlide').textContent = index + 1;
+      document.getElementById('totalSlides').textContent = slides.length;
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+      updateSlides(currentIndex);
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+      updateSlides(currentIndex);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
+      if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
+    });
+  </script>
+</body>
+</html>
