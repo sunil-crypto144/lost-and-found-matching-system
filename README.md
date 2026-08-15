@@ -1,8 +1,6 @@
 # Lost & Found Matching System
-> **AI-Powered QA Automation, Documentation & Software Engineering Assessment**  
-> *Internship Hiring Assessment — Tactive*
 
-A full-stack, production-quality **Lost & Found Matching System** web application featuring a deterministic, explainable multi-attribute matching engine, frictionless public reporting, administrative lifecycle control, and automated QA test suites.
+A production-quality **Lost & Found Matching System** web application featuring a deterministic, explainable multi-attribute matching engine, frictionless public reporting, administrative lifecycle control, and automated QA test suites.
 
 ---
 
@@ -23,7 +21,7 @@ A full-stack, production-quality **Lost & Found Matching System** web applicatio
   - User management and report moderation (deletion of inappropriate listings).
 - **Automated QA & Test Automation**:
   - 16 automated `pytest` unit & API integration tests covering normal paths, edge cases, and invalid inputs.
-  - Documented **Deliberate Red Test Run** verifying failure detection.
+  - Test suite resilience validation covering error detection and boundary conditions.
   - Playwright E2E browser automation suite.
 
 ---
@@ -77,7 +75,7 @@ npm run dev -- --host 0.0.0.0 --port 3000
 
 ---
 
-## 🧪 Running Automated QA Tests
+## 🧪 Running Automated Tests
 
 ### 1. Run Backend Unit & Integration Tests (16 Tests)
 ```bash
@@ -91,3 +89,15 @@ cd e2e
 npm install
 npx playwright test
 ```
+
+---
+
+## 📑 Project Documentation Index
+
+- [Architecture Document](docs/architecture.md) — System components, data flow diagram, and technology rationale.
+- [Design Document](docs/design.md) — Data models, scoring formulas, API endpoints, and error handling.
+- [User Guide](docs/user-guide.md) — Step-by-step user guide for public reporting, explainable score reading, and admin moderation.
+- [Test Suite & Red Run Documentation](docs/deliberate-red-test.md) — Verification of test suite failure detection and edge-case resilience.
+- [Engineering Change Log](docs/ai-change-log.md) — Feature evolution, database synchronization, and route optimization.
+- [Presentation Deck](docs/presentation_deck.html) — Interactive slide deck covering problem, architecture, matching engine, and QA results.
+- [Video Presentation Script](docs/video_script.md) — 5-minute presentation & demo walkthrough script.
