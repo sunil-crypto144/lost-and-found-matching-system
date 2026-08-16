@@ -100,4 +100,4 @@ npx playwright test
 - [Test Suite & Red Run Documentation](docs/deliberate-red-test.md) — Verification of test suite failure detection and edge-case resilience.
 - [Engineering Change Log](docs/ai-change-log.md) — Feature evolution, database synchronization, and route optimization.
 - [Presentation Deck](docs/presentation_deck.html) — Interactive slide deck covering problem, architecture, matching engine, and QA results.
-- [5-Minute Demo Video Walkthrough](docs/video_script.md) — Project presentation & live demonstration walkthrough.
+
