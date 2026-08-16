@@ -75,6 +75,15 @@ npm run dev -- --host 0.0.0.0 --port 3000
 
 ---
 
+## 🎥 Video Presentation & Live Demo
+
+A comprehensive 5-minute video walkthrough demonstrating the application architecture, public zero-friction reporting, instant 7-factor explainable matching, and administrator retrieval lifecycle:
+
+- **Script & Walkthrough Guide**: [docs/video_script.md](docs/video_script.md)
+- **Interactive Presentation Deck**: [docs/presentation_deck.html](docs/presentation_deck.html)
+
+---
+
 ## 🧪 Running Automated Tests
 
 ### 1. Run Backend Unit & Integration Tests (16 Tests)
@@ -100,4 +109,4 @@ npx playwright test
 - [Test Suite & Red Run Documentation](docs/deliberate-red-test.md) — Verification of test suite failure detection and edge-case resilience.
 - [Engineering Change Log](docs/ai-change-log.md) — Feature evolution, database synchronization, and route optimization.
 - [Presentation Deck](docs/presentation_deck.html) — Interactive slide deck covering problem, architecture, matching engine, and QA results.
-
+- [Video Presentation Script](docs/video_script.md) — 5-minute presentation & demo walkthrough script.
