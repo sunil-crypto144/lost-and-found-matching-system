@@ -18,7 +18,11 @@ In `app/services/matching.py`, the recommendation threshold was intentionally in
 THRESHOLD_MIN_RECOMMEND: float = 99.0  # Unreasonably high threshold blocking all matches
 ```
 
-### Captured Failure Log (`pytest -v`)
+### Visual Captured Red Run Screenshot
+
+![Deliberate Red Test Run](screenshots/deliberate_red_test_run.png)
+
+### Captured Terminal Output (`pytest -v`)
 
 ```bash
 ============================= test session starts =============================
@@ -64,6 +68,10 @@ Restored the calibrated recommendation threshold in `app/core/config.py` and `ap
 ```python
 THRESHOLD_MIN_RECOMMEND: float = 40.0
 ```
+
+### Visual Captured Green Run Screenshot
+
+![All 16 Tests Passing Green](screenshots/passing_green_test_run.png)
 
 ### Verified Passing Output (`pytest -v`)
 
