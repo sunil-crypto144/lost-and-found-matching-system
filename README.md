@@ -8,7 +8,7 @@ A full-stack, production-ready **Lost & Found Matching System** web application 
 
 Watch the complete 5-minute video demonstration covering problem motivation, system architecture, public guest reporting, explainable score breakdown modals, and admin retrieval resolution:
 
-▶️ **[Click Here to Watch the Demo Video](DEMO/2026-08-16-12-08-54.mov)** *(Plays directly in GitHub)*
+▶️ **[Click Here to Watch the Demo Video](DEMO/lost_and_found_demo.mov)** *(Plays directly in GitHub)*
 
 - **Presentation Script**: [docs/video_script.md](docs/video_script.md)
 - **Interactive Slide Deck**: [docs/presentation_deck.html](docs/presentation_deck.html)
@@ -111,4 +111,4 @@ npx playwright test
 - [Test Suite & Red Run Documentation](docs/deliberate-red-test.md) — Verification of test suite failure detection and edge-case resilience.
 - [Engineering Change Log](docs/ai-change-log.md) — Feature evolution, database synchronization, and route optimization.
 - [Presentation Deck](docs/presentation_deck.html) — Interactive slide deck covering problem, architecture, matching engine, and QA results.
-- [Demo Video](DEMO/2026-08-16-12-08-54.mov) — 5-minute video walkthrough in DEMO folder.
+- [Demo Video](DEMO/lost_and_found_demo.mov) — 5-minute video walkthrough in DEMO folder.
